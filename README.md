@@ -13,3 +13,6 @@ and the next line.
 Hurray~ I've done first git push to github. Before this, I learnt using gh auth login to set up credential helper store. 
 
 Now let me test git push again and see if local password would be prompted for.
+
+This time let's revert the process. Made changes on github and fetch the changes locally.
+
