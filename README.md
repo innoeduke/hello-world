@@ -16,3 +16,6 @@ Now let me test git push again and see if local password would be prompted for.
 
 This time let's revert the process. Made changes on github and fetch the changes locally.
 
+Great! I learnt using git fetch and git pull to download updates from upstream remote. 
+
+Last time, I sadly forgot to always allow credential helper to read my secret info. Let me see if it works this time. I don't want to be repeatly asked for password upon git push.
