@@ -19,13 +19,13 @@ Pandas is extremely efficient and useful for managing such tabular data. It read
 
 1. First, we need to import Pandas.
 
-   ```
+   ```python
    import pandas as pd
    ```
 
 2. Then we can create a dataframe.
 
-   ```
+   ```python
    df = pd.DataFrame(data = {
         'Name': ['Sky', 'Zelda'],
         'Gendar': ['Male', 'Female'],
