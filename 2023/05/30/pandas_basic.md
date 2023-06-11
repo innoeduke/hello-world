@@ -73,30 +73,28 @@ When we get a dataset, the first thing we would do is to understand its data. He
 
 **Get the values of columns and rows**
 
-- get the values of a column:
-  - `df['column_name']`
-- get the values of several columns (replace column_name with a list of column names)
-  - `df[['col1','col2']]`
-- get the values of a row (here we replace row_index with an integer)
-  - `df.loc[row_index]`
-- get the values of several rows (replace row_index with a list of row indices)
-  - `df.loc[[row_index1, row_index2]]`
-- get the values of a cell:
-  - `df.loc[row_index, column_name]`
-- get the values by IDs:
-  - cell: `df.iloc[row_id, col_id]`
-  - column: `df.iloc[:, col_id]`
-  - row: `df.iloc[row_id, :]`
+- get the values by labels
+
+  - `df.loc[row_indices, col_names]`
+  - note that labels are inclusive
+
+- get the values by positions:
+
+  - `df.iloc[row_range, col_range]`
+  - note that right edge is exclusive
+
+- get the values by mix of labels and positions
+  - `df.ix[row_indices|row_range, col_names|col_range]`
 
 **Get the values of a column by conditions**
 
 - get the values of a column by conditions:
-  - `df[df['column_name'] == value]`
+  - `df.loc[:, df['column_name'] == value]`
 
 **Get the unique values of a column**
 
 - get the unique values of a column:
-  - `df['column_name'].unique()`
+  - `df.loc[:, 'column_name'].unique()`
 
 **Get the number of unique values of**
 
