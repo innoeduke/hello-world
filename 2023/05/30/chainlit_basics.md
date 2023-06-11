@@ -1,6 +1,6 @@
-# Chainlit Basics QA
+## Chainlit Basics QA
 
-#### Q1: How to upload a pdf file and load it for langchain?
+### Q1: How to upload a pdf file and load it for langchain?
 
 ```python
 # demo codes
@@ -29,7 +29,7 @@ Key takeaways:
   - PyPDFLoader requires a file path, but chainlit only loads pdf to memory but not saves it to local folder.
   - `tempfile.write(pdf_file.content)` will save pdf content into a temp file with random name. With it assistance, pypdf now gets a path of tempfile for loading
 
-#### Q2 How do the several langchain decorators work differently?
+### Q2 How do the several langchain decorators work differently?
 
 - `@lanchain_factory` wraps up a chain or agent of langchain and returns its object. Note that its decorated function doesn't send messages to UI
 - `langchain_run(agent, prompt:TypedDict)` provides a chance of doing something before agent/chain runs a prompt. The prompt is a TypedDict with question & text two keys.
@@ -41,7 +41,7 @@ Only Text and Image (LocalImage/RemoteImage).
 
 `name=` property is used to expose elements as access point in side/page display (not affecting inline display)
 
-#### Q4 Anything special with action_callback()?
+### Q4 Anything special with action_callback()?
 
 - Action() class creates actions, whose `name=` property works like a class name, and `value=` property works like _id_ that differentiates multiple actions of same class. `label=` property is used to change text on the action link
 - @action_callback takes one str parameter that specifies an action name

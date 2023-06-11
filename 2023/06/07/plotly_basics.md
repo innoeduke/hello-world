@@ -1,4 +1,4 @@
-# Plotly in Python basics
+## Plotly in Python basics
 
 ### Quick Facts
 

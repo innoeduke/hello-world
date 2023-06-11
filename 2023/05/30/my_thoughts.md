@@ -1,4 +1,4 @@
-# my thought
+## My thought today
 
 ### Why using VSCode Journal?
 

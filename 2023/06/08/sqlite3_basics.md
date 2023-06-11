@@ -1,4 +1,4 @@
-# sqlite3 basics
+## sqlite3 basics
 
 ### Basics
 
